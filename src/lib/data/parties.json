@@ -1,0 +1,87 @@
+[
+	{
+		"name": "Liberal",
+		"code": "LIB",
+		"color": "#D71920"
+	},
+	{
+		"name": "Conservative",
+		"code": "CON",
+		"color": "#1A4782"
+	},
+	{
+		"name": "Liberal-Conservative",
+		"code": "LIBCON",
+		"color": "#1A4782"
+	},
+	{
+		"name": "Progressive Conservative",
+		"code": "PC",
+		"color": "#002FA1"
+	},
+	{
+		"name": "New Democratic Party",
+		"code": "NDP",
+		"color": "#F37021"
+	},
+	{
+		"name": "Bloc Québécois",
+		"code": "BQ",
+		"color": "#33B2CC"
+	},
+	{
+		"name": "Green",
+		"code": "GRN",
+		"color": "#3D9B35"
+	},
+	{
+		"name": "Canadian Alliance",
+		"code": "CA",
+		"color": "#5F9EA0"
+	},
+	{
+		"name": "Progressive",
+		"code": "PROG",
+		"color": "#66CC02"
+	},
+    {
+		"name": "United Farmers of Alberta",
+		"code": "UFA",
+		"color": "#268659"
+	},
+    {
+		"name": "Reform",
+		"code": "REF",
+		"color": "#36B46B"
+	},
+    {
+		"name": "Labour",
+		"code": "LBR",
+		"color": "#EEBBBB"
+	},
+	{
+		"name": "Anti-Confederation",
+		"code": "AC",
+		"color": "#EABB94"
+	},
+    {
+		"name": "Co-operative Commonwealth Federation",
+		"code": "CCF",
+		"color": "#FBD802"
+	},
+    {
+		"name": "Social Credit",
+		"code": "SC",
+		"color": "#1B6800"
+	},
+    {
+		"name": "Ralliement créditiste",
+		"code": "RC",
+		"color": "#358E3A"
+	},
+	{
+		"name": "Independents / Other",
+		"code": "OTHER",
+		"color": "#DCDCDC"
+	}
+]
