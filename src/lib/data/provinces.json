@@ -1,54 +1,54 @@
 [
 	{
 		"name": "British Columbia",
-        "code": "BC"
+		"code": "BC"
 	},
-    {
+	{
 		"name": "Alberta",
-        "code": "AB"
+		"code": "AB"
 	},
-    {
-        "name": "Saskatchewan",
-        "code": "SK"
-    },
-    {
-        "name": "Manitoba",
-        "code": "MB"
-    },
-    {
-        "name": "Ontario",
-        "code": "ON"
-    },
-    {
-        "name": "Quebec",
-        "code": "QC"
-    },
-    {
-        "name": "New Brunswick",
-        "code": "NB"
-    },
-    {
-        "name": "Nova Scotia",
-        "code": "NS"
-    },
-    {
-        "name": "Prince Edward Island",
-        "code": "PE"
-    },
-    {
-        "name": "Newfoundland and Labrador",
-        "code": "NL"
-    },
-    {
-        "name": "Yukon",
-        "code": "YT"
-    },
-    {
-        "name": "Northwest Territories",
-        "code": "NT"
-    },
-    {
-        "name": "Nunavut",
-        "code": "NU"
-    }
+	{
+		"name": "Saskatchewan",
+		"code": "SK"
+	},
+	{
+		"name": "Manitoba",
+		"code": "MB"
+	},
+	{
+		"name": "Ontario",
+		"code": "ON"
+	},
+	{
+		"name": "Quebec",
+		"code": "QC"
+	},
+	{
+		"name": "New Brunswick",
+		"code": "NB"
+	},
+	{
+		"name": "Nova Scotia",
+		"code": "NS"
+	},
+	{
+		"name": "Prince Edward Island",
+		"code": "PE"
+	},
+	{
+		"name": "Newfoundland and Labrador",
+		"code": "NL"
+	},
+	{
+		"name": "Yukon",
+		"code": "YT"
+	},
+	{
+		"name": "Northwest Territories",
+		"code": "NT"
+	},
+	{
+		"name": "Nunavut",
+		"code": "NU"
+	}
 ]

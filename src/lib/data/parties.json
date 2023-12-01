@@ -59,17 +59,17 @@
 		"code": "PROG",
 		"color": "#66CC02"
 	},
-    {
+	{
 		"name": "United Farmers of Alberta",
 		"code": "UFA",
 		"color": "#268659"
 	},
-    {
+	{
 		"name": "Reform",
 		"code": "REF",
 		"color": "#36B46B"
 	},
-    {
+	{
 		"name": "Labour",
 		"code": "LBR",
 		"color": "#EEBBBB"
@@ -79,17 +79,17 @@
 		"code": "AC",
 		"color": "#EABB94"
 	},
-    {
+	{
 		"name": "Co-operative Commonwealth Federation",
 		"code": "CCF",
 		"color": "#FBD802"
 	},
-    {
+	{
 		"name": "Social Credit",
 		"code": "SC",
 		"color": "#1B6800"
 	},
-    {
+	{
 		"name": "Ralliement créditiste",
 		"code": "RC",
 		"color": "#358E3A"
