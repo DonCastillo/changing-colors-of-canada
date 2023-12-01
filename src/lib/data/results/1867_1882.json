@@ -1,0 +1,611 @@
+[
+	{
+		"year": "1867",
+		"results": [
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 33
+					},
+					{
+						"party": "CON",
+						"count": 33
+					},
+					{
+						"party": "LIBCON",
+						"count": 16
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 17
+					},
+					{
+						"party": "CON",
+						"count": 36
+					},
+					{
+						"party": "LIBCON",
+						"count": 11
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 12
+					},
+					{
+						"party": "CON",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "AC",
+						"count": 18
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "LIBCON",
+						"count": 2
+					},
+					{
+						"party": "LIB",
+						"count": 12
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1872",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 2
+					},
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "LIBCON",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					},
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "LIBCON",
+						"count": 1
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 48
+					},
+					{
+						"party": "CON",
+						"count": 26
+					},
+					{
+						"party": "LIBCON",
+						"count": 12
+					},
+					{
+						"party": "OTHER",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 26
+					},
+					{
+						"party": "CON",
+						"count": 25
+					},
+					{
+						"party": "LIBCON",
+						"count": 12
+					},
+					{
+						"party": "OTHER",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 9
+					},
+					{
+						"party": "CON",
+						"count": 2
+					},
+					{
+						"party": "LIBCON",
+						"count": 3
+					},
+					{
+						"party": "OTHER",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 8
+					},
+					{
+						"party": "CON",
+						"count": 7
+					},
+					{
+						"party": "LIBCON",
+						"count": 6
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1874",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 3
+					},
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "LIBCON",
+						"count": 1
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					},
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 61
+					},
+					{
+						"party": "CON",
+						"count": 15
+					},
+					{
+						"party": "LIBCON",
+						"count": 10
+					},
+					{
+						"party": "OTHER",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 34
+					},
+					{
+						"party": "CON",
+						"count": 17
+					},
+					{
+						"party": "LIBCON",
+						"count": 12
+					},
+					{
+						"party": "OTHER",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 10
+					},
+					{
+						"party": "CON",
+						"count": 2
+					},
+					{
+						"party": "LIBCON",
+						"count": 1
+					},
+					{
+						"party": "OTHER",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 15
+					},
+					{
+						"party": "CON",
+						"count": 2
+					},
+					{
+						"party": "LIBCON",
+						"count": 2
+					},
+					{
+						"party": "OTHER",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 5
+					},
+					{
+						"party": "CON",
+						"count": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1878",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 2
+					},
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "LIBCON",
+						"count": 2
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 2
+					},
+					{
+						"party": "LIBCON",
+						"count": 1
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 27
+					},
+					{
+						"party": "CON",
+						"count": 37
+					},
+					{
+						"party": "LIBCON",
+						"count": 23
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 17
+					},
+					{
+						"party": "CON",
+						"count": 33
+					},
+					{
+						"party": "LIBCON",
+						"count": 12
+					},
+					{
+						"party": "OTHER",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 9
+					},
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "LIBCON",
+						"count": 3
+					},
+					{
+						"party": "OTHER",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 7
+					},
+					{
+						"party": "CON",
+						"count": 8
+					},
+					{
+						"party": "LIBCON",
+						"count": 6
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					},
+					{
+						"party": "CON",
+						"count": 3
+					},
+					{
+						"party": "LIBCON",
+						"count": 2
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1882",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 3
+					},
+					{
+						"party": "LIBCON",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 2
+					},
+					{
+						"party": "CON",
+						"count": 2
+					},
+					{
+						"party": "LIBCON",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 40
+					},
+					{
+						"party": "CON",
+						"count": 39
+					},
+					{
+						"party": "LIBCON",
+						"count": 13
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 12
+					},
+					{
+						"party": "CON",
+						"count": 38
+					},
+					{
+						"party": "LIBCON",
+						"count": 12
+					},
+					{
+						"party": "OTHER",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 7
+					},
+					{
+						"party": "CON",
+						"count": 4
+					},
+					{
+						"party": "LIBCON",
+						"count": 3
+					},
+					{
+						"party": "OTHER",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 8
+					},
+					{
+						"party": "CON",
+						"count": 8
+					},
+					{
+						"party": "LIBCON",
+						"count": 5
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					},
+					{
+						"party": "LIBCON",
+						"count": 2
+					}
+				]
+			}
+		]
+	}
+]
