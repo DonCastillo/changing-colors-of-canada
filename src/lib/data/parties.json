@@ -35,6 +35,11 @@
 		"color": "#F37021"
 	},
 	{
+		"name": "New Democracy",
+		"code": "ND",
+		"color": "#3D9B35"
+	},
+	{
 		"name": "Bloc Québécois",
 		"code": "BQ",
 		"color": "#33B2CC"
