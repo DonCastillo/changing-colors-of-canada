@@ -5,6 +5,16 @@
 		"color": "#D71920"
 	},
 	{
+		"name": "Opposition",
+		"code": "OPP",
+		"color": "#D71920"
+	},
+	{
+		"name": "Government",
+		"code": "GOV",
+		"color": "#1A4782"
+	},
+	{
 		"name": "Conservative",
 		"code": "CON",
 		"color": "#1A4782"
