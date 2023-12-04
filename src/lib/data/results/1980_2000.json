@@ -1,6 +1,7 @@
 [
 	{
 		"year": "1980",
+		"nodes": ["LIB", "PC", "SC", "NDP", "RC"],
 		"results": [
 			{
 				"prov": "BC",
@@ -162,6 +163,7 @@
 	},
 	{
 		"year": "1984",
+		"nodes": ["LIB", "PC", "SC", "NDP", "RC"],
 		"results": [
 			{
 				"prov": "BC",
@@ -327,6 +329,7 @@
 	},
 	{
 		"year": "1988",
+		"nodes": ["LIB", "PC", "SC", "NDP", "REF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -488,6 +491,7 @@
 	},
 	{
 		"year": "1993",
+		"nodes": ["LIB", "PC", "BQ", "NDP", "REF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -649,6 +653,7 @@
 	},
 	{
 		"year": "1997",
+		"nodes": ["LIB", "PC", "BQ", "NDP", "REF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -833,6 +838,7 @@
 	},
 	{
 		"year": "2000",
+		"nodes": ["LIB", "PC", "BQ", "NDP", "CA"],
 		"results": [
 			{
 				"prov": "BC",

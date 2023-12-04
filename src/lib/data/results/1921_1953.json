@@ -1,6 +1,7 @@
 [
 	{
 		"year": "1921",
+		"nodes": ["LIB", "CON", "PROG", "LBR", "UFA"],
 		"results": [
 			{
 				"prov": "BC",
@@ -144,6 +145,7 @@
 	},
 	{
 		"year": "1925",
+		"nodes": ["LIB", "CON", "PROG", "LBR", "UFA"],
 		"results": [
 			{
 				"prov": "BC",
@@ -307,6 +309,7 @@
 	},
 	{
 		"year": "1926",
+		"nodes": ["LIB", "CON", "PROG", "LBR", "UFA"],
 		"results": [
 			{
 				"prov": "BC",
@@ -478,6 +481,7 @@
 	},
 	{
 		"year": "1930",
+		"nodes": ["LIB", "CON", "PROG", "LBR", "UFA"],
 		"results": [
 			{
 				"prov": "BC",
@@ -637,6 +641,7 @@
 	},
 	{
 		"year": "1935",
+		"nodes": ["LIB", "CON", "SC", "LBR", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -798,6 +803,7 @@
 	},
 	{
 		"year": "1940",
+		"nodes": ["LIB", "CON", "SC", "ND", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -961,6 +967,7 @@
 	},
 	{
 		"year": "1945",
+		"nodes": ["LIB", "PC", "SC", "ND", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -1124,6 +1131,7 @@
 	},
 	{
 		"year": "1949",
+		"nodes": ["LIB", "PC", "SC", "ND", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -1308,6 +1316,7 @@
 	},
 	{
 		"year": "1953",
+		"nodes": ["LIB", "PC", "SC", "ND", "CCF"],
 		"results": [
 			{
 				"prov": "BC",

@@ -1,6 +1,7 @@
 [
 	{
 		"year": "1867",
+		"nodes": ["LIB", "CON", "LIBCON", "AC"],
 		"results": [
 			{
 				"prov": "ON",
@@ -83,6 +84,7 @@
 	},
 	{
 		"year": "1872",
+		"nodes": ["LIB", "CON", "LIBCON"],
 		"results": [
 			{
 				"prov": "BC",
@@ -206,6 +208,7 @@
 	},
 	{
 		"year": "1874",
+		"nodes": ["LIB", "CON", "LIBCON"],
 		"results": [
 			{
 				"prov": "BC",
@@ -346,6 +349,7 @@
 	},
 	{
 		"year": "1878",
+		"nodes": ["LIB", "CON", "LIBCON"],
 		"results": [
 			{
 				"prov": "BC",
@@ -486,6 +490,7 @@
 	},
 	{
 		"year": "1882",
+		"nodes": ["LIB", "CON", "LIBCON"],
 		"results": [
 			{
 				"prov": "BC",

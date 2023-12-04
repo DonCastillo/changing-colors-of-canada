@@ -1,6 +1,7 @@
 [
 	{
 		"year": "2004",
+		"nodes": ["LIB", "CON", "BQ", "NDP", "CA"],
 		"results": [
 			{
 				"prov": "BC",
@@ -187,6 +188,7 @@
 	},
 	{
 		"year": "2006",
+		"nodes": ["LIB", "CON", "BQ", "NDP", "GRN"],
 		"results": [
 			{
 				"prov": "BC",
@@ -375,6 +377,7 @@
 	},
 	{
 		"year": "2008",
+		"nodes": ["LIB", "CON", "BQ", "NDP", "GRN"],
 		"results": [
 			{
 				"prov": "BC",
@@ -583,6 +586,7 @@
 	},
 	{
 		"year": "2011",
+		"nodes": ["LIB", "CON", "BQ", "NDP", "GRN"],
 		"results": [
 			{
 				"prov": "BC",
@@ -792,6 +796,7 @@
 	},
 	{
 		"year": "2015",
+		"nodes": ["LIB", "CON", "BQ", "NDP", "GRN"],
 		"results": [
 			{
 				"prov": "BC",
@@ -977,6 +982,7 @@
 	},
 	{
 		"year": "2019",
+		"nodes": ["LIB", "CON", "BQ", "NDP", "GRN"],
 		"results": [
 			{
 				"prov": "BC",
@@ -1172,6 +1178,7 @@
 	},
 	{
 		"year": "2021",
+		"nodes": ["LIB", "CON", "BQ", "NDP", "GRN"],
 		"results": [
 			{
 				"prov": "BC",

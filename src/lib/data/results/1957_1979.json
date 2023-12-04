@@ -1,6 +1,7 @@
 [
 	{
 		"year": "1957",
+		"nodes": ["LIB", "PC", "SC", "ND", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -179,6 +180,7 @@
 	},
 	{
 		"year": "1958",
+		"nodes": ["LIB", "PC", "SC", "ND", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -327,6 +329,7 @@
 	},
 	{
 		"year": "1962",
+		"nodes": ["LIB", "PC", "SC", "NDP", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -510,6 +513,7 @@
 	},
 	{
 		"year": "1963",
+		"nodes": ["LIB", "PC", "SC", "NDP", "CCF"],
 		"results": [
 			{
 				"prov": "BC",
@@ -688,6 +692,7 @@
 	},
 	{
 		"year": "1965",
+		"nodes": ["LIB", "PC", "SC", "NDP", "RC"],
 		"results": [
 			{
 				"prov": "BC",
@@ -857,6 +862,7 @@
 	},
 	{
 		"year": "1968",
+		"nodes": ["LIB", "PC", "SC", "NDP", "RC"],
 		"results": [
 			{
 				"prov": "BC",
@@ -1029,6 +1035,7 @@
 	},
 	{
 		"year": "1972",
+		"nodes": ["LIB", "PC", "SC", "NDP", "RC"],
 		"results": [
 			{
 				"prov": "BC",
@@ -1212,6 +1219,7 @@
 	},
 	{
 		"year": "1974",
+		"nodes": ["LIB", "PC", "SC", "NDP", "RC"],
 		"results": [
 			{
 				"prov": "BC",
@@ -1394,6 +1402,7 @@
 	},
 	{
 		"year": "1979",
+		"nodes": ["LIB", "PC", "SC", "NDP", "RC"],
 		"results": [
 			{
 				"prov": "BC",
