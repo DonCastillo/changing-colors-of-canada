@@ -1,0 +1,1372 @@
+[
+	{
+		"year": "2004",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 8
+					},
+					{
+						"party": "CON",
+						"count": 22
+					},
+
+					{
+						"party": "NDP",
+						"count": 5
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "AB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 2
+					},
+					{
+						"party": "CON",
+						"count": 26
+					}
+				]
+			},
+			{
+				"prov": "SK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					},
+					{
+						"party": "CON",
+						"count": 13
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 3
+					},
+					{
+						"party": "CON",
+						"count": 7
+					},
+					{
+						"party": "NDP",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 75
+					},
+					{
+						"party": "CON",
+						"count": 24
+					},
+					{
+						"party": "NDP",
+						"count": 7
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 21
+					},
+
+					{
+						"party": "BQ",
+						"count": 54
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 7
+					},
+					{
+						"party": "CON",
+						"count": 2
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 6
+					},
+					{
+						"party": "CON",
+						"count": 3
+					},
+
+					{
+						"party": "NDP",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NL",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 5
+					},
+					{
+						"party": "CON",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "NU",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NT",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "YK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2006",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 17
+					},
+					{
+						"party": "LIB",
+						"count": 9
+					},
+
+					{
+						"party": "NDP",
+						"count": 10
+					}
+				]
+			},
+			{
+				"prov": "AB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 28
+					}
+				]
+			},
+			{
+				"prov": "SK",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 12
+					},
+					{
+						"party": "LIB",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 8
+					},
+					{
+						"party": "LIB",
+						"count": 3
+					},
+
+					{
+						"party": "NDP",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 40
+					},
+					{
+						"party": "LIB",
+						"count": 54
+					},
+
+					{
+						"party": "NDP",
+						"count": 12
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 10
+					},
+					{
+						"party": "LIB",
+						"count": 13
+					},
+
+					{
+						"party": "BQ",
+						"count": 51
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 3
+					},
+					{
+						"party": "LIB",
+						"count": 6
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 3
+					},
+					{
+						"party": "LIB",
+						"count": 6
+					},
+
+					{
+						"party": "NDP",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NL",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 3
+					},
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NU",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NT",
+				"seats": [
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "YK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2008",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 22
+					},
+					{
+						"party": "LIB",
+						"count": 5
+					},
+
+					{
+						"party": "NDP",
+						"count": 9
+					}
+				]
+			},
+			{
+				"prov": "AB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 27
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "SK",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 13
+					},
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 9
+					},
+					{
+						"party": "LIB",
+						"count": 1
+					},
+
+					{
+						"party": "NDP",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 51
+					},
+					{
+						"party": "LIB",
+						"count": 38
+					},
+
+					{
+						"party": "NDP",
+						"count": 17
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 10
+					},
+					{
+						"party": "LIB",
+						"count": 14
+					},
+					{
+						"party": "BQ",
+						"count": 49
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					},
+
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 6
+					},
+					{
+						"party": "LIB",
+						"count": 3
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 3
+					},
+					{
+						"party": "LIB",
+						"count": 5
+					},
+
+					{
+						"party": "NDP",
+						"count": 2
+					},
+
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					},
+					{
+						"party": "LIB",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NL",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 6
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NU",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NT",
+				"seats": [
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "YK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2011",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 21
+					},
+
+					{
+						"party": "NDP",
+						"count": 12
+					},
+					{
+						"party": "LIB",
+						"count": 2
+					},
+
+					{
+						"party": "GRN",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "AB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 27
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "SK",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 13
+					},
+
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 11
+					},
+
+					{
+						"party": "NDP",
+						"count": 2
+					},
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 73
+					},
+
+					{
+						"party": "NDP",
+						"count": 22
+					},
+					{
+						"party": "LIB",
+						"count": 11
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 5
+					},
+
+					{
+						"party": "NDP",
+						"count": 59
+					},
+					{
+						"party": "LIB",
+						"count": 7
+					},
+					{
+						"party": "BQ",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 8
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					},
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 4
+					},
+
+					{
+						"party": "NDP",
+						"count": 3
+					},
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					},
+
+					{
+						"party": "LIB",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "NL",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					},
+
+					{
+						"party": "NDP",
+						"count": 2
+					},
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NU",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NT",
+				"seats": [
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "YK",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2015",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 17
+					},
+
+					{
+						"party": "CON",
+						"count": 10
+					},
+					{
+						"party": "NDP",
+						"count": 14
+					},
+					{
+						"party": "GRN",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "AB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					},
+
+					{
+						"party": "CON",
+						"count": 29
+					},
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "SK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					},
+
+					{
+						"party": "CON",
+						"count": 10
+					},
+					{
+						"party": "NDP",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 7
+					},
+
+					{
+						"party": "CON",
+						"count": 5
+					},
+					{
+						"party": "NDP",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 80
+					},
+
+					{
+						"party": "CON",
+						"count": 33
+					},
+					{
+						"party": "NDP",
+						"count": 8
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 40
+					},
+
+					{
+						"party": "CON",
+						"count": 12
+					},
+					{
+						"party": "NDP",
+						"count": 16
+					},
+
+					{
+						"party": "BQ",
+						"count": 10
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 10
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 11
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NL",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 7
+					}
+				]
+			},
+			{
+				"prov": "NU",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NT",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "YK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2019",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 11
+					},
+
+					{
+						"party": "CON",
+						"count": 17
+					},
+					{
+						"party": "NDP",
+						"count": 11
+					},
+
+					{
+						"party": "GRN",
+						"count": 2
+					},
+					{
+						"party": "OTHER",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "AB",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 33
+					},
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "SK",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 14
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					},
+
+					{
+						"party": "CON",
+						"count": 7
+					},
+					{
+						"party": "NDP",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 79
+					},
+
+					{
+						"party": "CON",
+						"count": 36
+					},
+					{
+						"party": "NDP",
+						"count": 6
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 35
+					},
+
+					{
+						"party": "CON",
+						"count": 10
+					},
+					{
+						"party": "NDP",
+						"count": 1
+					},
+					{
+						"party": "BQ",
+						"count": 32
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 6
+					},
+
+					{
+						"party": "CON",
+						"count": 3
+					},
+
+					{
+						"party": "GRN",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 10
+					},
+
+					{
+						"party": "CON",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NL",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 6
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NU",
+				"seats": [
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NT",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "YK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2021",
+		"results": [
+			{
+				"prov": "BC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 15
+					},
+
+					{
+						"party": "CON",
+						"count": 13
+					},
+
+					{
+						"party": "NDP",
+						"count": 13
+					},
+					{
+						"party": "GRN",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "AB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 2
+					},
+
+					{
+						"party": "CON",
+						"count": 30
+					},
+
+					{
+						"party": "NDP",
+						"count": 2
+					}
+				]
+			},
+			{
+				"prov": "SK",
+				"seats": [
+					{
+						"party": "CON",
+						"count": 14
+					}
+				]
+			},
+			{
+				"prov": "MB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					},
+
+					{
+						"party": "CON",
+						"count": 7
+					},
+
+					{
+						"party": "NDP",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "ON",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 78
+					},
+
+					{
+						"party": "CON",
+						"count": 37
+					},
+
+					{
+						"party": "NDP",
+						"count": 5
+					},
+					{
+						"party": "GRN",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "QC",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 35
+					},
+
+					{
+						"party": "CON",
+						"count": 10
+					},
+					{
+						"party": "BQ",
+						"count": 32
+					},
+
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NB",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 6
+					},
+
+					{
+						"party": "CON",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NS",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 8
+					},
+
+					{
+						"party": "CON",
+						"count": 3
+					}
+				]
+			},
+			{
+				"prov": "PE",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 4
+					}
+				]
+			},
+			{
+				"prov": "NL",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 6
+					},
+
+					{
+						"party": "CON",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NU",
+				"seats": [
+					{
+						"party": "NDP",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "NT",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			},
+			{
+				"prov": "YK",
+				"seats": [
+					{
+						"party": "LIB",
+						"count": 1
+					}
+				]
+			}
+		]
+	}
+]
