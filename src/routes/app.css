@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prov {
+	background-color: #bcd4e6;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	max-width: 120px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#BC {
+	top: 57%;
+	left: 7%;
+}
+#AB {
+	top: 62%;
+	left: 18%;
+}
+#SK {
+    top: 67%;
+    left: 28%;
+}
+
+#MB {
+    top: 63%;
+    left: 38%;
+}
+#ON {
+    top: 73%;
+    right: 41%;
+}
+#QC {
+    top: 63%;
+    right: 27%;
+}
+#NB {
+    top: 74%;
+    right: 18%;
+}
+
+#NS {
+    top: 80%;
+    right: 4%;
+}
+
+#PE {
+    top: 67%;
+    right: 11%;
+}
+#NL {
+	top: 54%;
+	right: 13%;
+}
+#YT {
+    top: 33%;
+    left: 6%;
+}
+#NT {
+    top: 39%;
+    left: 19%;
+}
+#NU {
+    top: 41%;
+    left: 38%;
+}
+
+.node {
+	height: 30px;
+	width: 30px;
+	border-radius: 9999px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1px;
+}
+.node-1 {
+	height: 70px;
+	width: 70px;
+}
+.node-2 {
+	height: 40px;
+	width: 40px;
+}
