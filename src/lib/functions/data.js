@@ -18,12 +18,10 @@ export const getParties = () => {
 	return PartyData;
 };
 
-export const getNodes = () => {
+export const getPartiesInYears = () => {
 	let newNodes = {};
 	allResults.forEach(({ year, nodes }) => {
 		newNodes[year] = nodes;
-		// let newNodes = [...nodes, 'OTHER'];
-		// return { year, nodes: newNodes };
 	});
 	return newNodes;
 };

@@ -1,5 +1,5 @@
 <script>
-	import { getElectionYears, getResults, getNodes } from './../lib/functions/data.js';
+	import { getElectionYears, getResults, getPartiesInYears } from './../lib/functions/data.js';
 	import { getParties, getProvinces } from '$lib/functions/data.js';
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
 	import Map from '$lib/graphics/Map.svelte';
@@ -7,22 +7,35 @@
 	import { onMount } from 'svelte';
 	import ElectionYearButton from '../lib/components/ElectionYearButton.svelte';
 
-	const provinces = getProvinces();
-	const parties = getParties();
-	const results = getResults();
+	let allProvinces = [];
+	let allParties = [];
 	let electionYears = [];
-	let nodes = [];
-	console.log('results', results);
-	// console.log('provinces', provinces);
-	// console.log('parties', parties);
+	let partiesInYears = [];
+	let allResults = [];
+	let currentYear = electionYears[0] ?? "1867";
+	$: partiesInCurrentYear = partiesInYears[currentYear];
+	$: resultsInCurrentYear = allResults.filter(result => result.year === currentYear)[0];
+	$: console.log('partiesInCurrentYear', partiesInCurrentYear);
+	$: console.log('resultsInCurrentYear', resultsInCurrentYear);
+
 
 	onMount(() => {
 		console.log("I'm mounted");
+		allProvinces = getProvinces();
+		allParties = getParties();
 		electionYears = getElectionYears();
-		nodes = getNodes();
+		partiesInYears = getPartiesInYears();
+		allResults = getResults();
+
 		console.log('electionYears', electionYears);
-		console.table('nodes', nodes);
+		console.log('partiesInYears', partiesInYears);
+		console.log('allResults', allResults);
 	});
+
+	function changeYearHandler(year) {
+		// const 
+		// console.log(year);
+	}
 </script>
 
 <svelte:head>
@@ -43,48 +56,20 @@
 			<div class="h-full flex flex-col md:flex-row bg-lime-700">
 				<aside class="md:w-[230px] bg-red-300 max-h-screen overflow-y-auto">
 					{#each electionYears as year}
-						<ElectionYearButton {year} on:click={() => console.log(year)} />
+						<ElectionYearButton {year} on:click={() => changeYearHandler(year)} />
 					{/each}
 				</aside>
 				<main class="flex-1 bg-indigo-400">
 					<div class="max-w-[1500px] m-auto h-full flex flex-col justify-center bg-amber-100">
 						<div class="bg-amber-100 relative">
 							<Map />
-							{#each provinces as province}
-								<ProvNodes provCode={province.code} provName={province.name} />
+							{#each allProvinces as province}
+								<ProvNodes 
+									provCode={province.code} 
+									provName={province.name}
+									nodes={[]} 
+								/>
 							{/each}
-							<!-- <div class="prov" id="BC">
-								<div class="node node-1 bg-red-400">1</div>
-								<div class="node node-2 bg-blue-400">2</div>
-								<div class="node node-3 bg-yellow-400">3</div>
-								<div class="node node-4 bg-orange-400">4</div>
-								<div class="node node-5 bg-violet-400">5</div>
-								<div>BC</div>
-							</div>
-
-							<div class="prov" id="AB">
-								<div class="node node-1 bg-red-400">1</div>
-								<div class="node node-2 bg-blue-400">2</div>
-								<div class="node node-3 bg-yellow-400">3</div>
-								<div class="node node-4 bg-orange-400">4</div>
-								<div class="node node-5 bg-violet-400">5</div>
-							</div>
-
-							<div class="prov" id="SK">
-								<div class="node node-1 bg-red-400">1</div>
-								<div class="node node-2 bg-blue-400">2</div>
-								<div class="node node-3 bg-yellow-400">3</div>
-								<div class="node node-4 bg-orange-400">4</div>
-								<div class="node node-5 bg-violet-400">5</div>
-							</div>
-
-							<div class="prov" id="MB">
-								<div class="node node-1 bg-red-400">1</div>
-								<div class="node node-2 bg-blue-400">2</div>
-								<div class="node node-3 bg-yellow-400">3</div>
-								<div class="node node-4 bg-orange-400">4</div>
-								<div class="node node-5 bg-violet-400">5</div>
-							</div> -->
 						</div>
 					</div>
 				</main>
