@@ -19,7 +19,19 @@ export const getParties = () => {
 
 export const getResults = () => {
 	// return [...results1, ...results2, ...results3, ...results4, ...results5, ...results6]
-	return allResults;
+	const computedResults = allResults.map(election => {
+		const results = election.results.map(results => {
+			const totalSeats = results.seats.reduce((acc, obj) => { return acc + obj.count }, 0);
+			const provSeats = results.seats.map(seat => {
+				const partySeats = seat.count;
+				const partySeatsPercent = Math.round((partySeats / totalSeats) * 100);
+				return { ...seat, percentage: partySeatsPercent }
+			})
+			return { ...results, seats: provSeats, totalSeats }; 
+		})
+		return {...election, results } 
+	})
+	return computedResults;
 };
 
 export const getElectionYears = () => {

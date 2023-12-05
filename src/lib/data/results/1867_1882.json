@@ -38,19 +38,6 @@
 				]
 			},
 			{
-				"prov": "NB",
-				"seats": [
-					{
-						"party": "LIB",
-						"count": 12
-					},
-					{
-						"party": "CON",
-						"count": 3
-					}
-				]
-			},
-			{
 				"prov": "NS",
 				"seats": [
 					{

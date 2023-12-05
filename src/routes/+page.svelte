@@ -12,8 +12,8 @@
 	const results = getResults();
 	let electionYears = [];
 	console.log('results', results);
-	console.log('provinces', provinces);
-	console.log('parties', parties);
+	// console.log('provinces', provinces);
+	// console.log('parties', parties);
 
 	onMount(() => {
 		console.log("I'm mounted");
