@@ -1,5 +1,5 @@
 <script>
-	import { getElectionYears, getResults } from './../lib/functions/data.js';
+	import { getElectionYears, getResults, getNodes } from './../lib/functions/data.js';
 	import { getParties, getProvinces } from '$lib/functions/data.js';
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
 	import Map from '$lib/graphics/Map.svelte';
@@ -11,6 +11,7 @@
 	const parties = getParties();
 	const results = getResults();
 	let electionYears = [];
+	let nodes = [];
 	console.log('results', results);
 	// console.log('provinces', provinces);
 	// console.log('parties', parties);
@@ -18,7 +19,9 @@
 	onMount(() => {
 		console.log("I'm mounted");
 		electionYears = getElectionYears();
+		nodes = getNodes();
 		console.log('electionYears', electionYears);
+		console.table('nodes', nodes);
 	});
 </script>
 
@@ -38,7 +41,7 @@
 		</header>
 		<div class="bg-pink-100 flex-1">
 			<div class="h-full flex flex-col md:flex-row bg-lime-700">
-				<aside class="md:w-[230px] bg-red-300">
+				<aside class="md:w-[230px] bg-red-300 max-h-screen overflow-y-auto">
 					{#each electionYears as year}
 						<ElectionYearButton {year} on:click={() => console.log(year)} />
 					{/each}

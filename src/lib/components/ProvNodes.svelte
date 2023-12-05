@@ -9,5 +9,6 @@
 	<div class="node node-3 bg-yellow-400">3</div>
 	<div class="node node-4 bg-orange-400">4</div>
 	<div class="node node-5 bg-violet-400">5</div>
+	<div class="node node-5 bg-violet-400">6</div>
 	<div>{provCode}</div>
 </div>

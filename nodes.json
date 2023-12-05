@@ -1,0 +1,287 @@
+{
+    "1867": [
+        "LIB",
+        "CON",
+        "LIBCON",
+        "AC"
+    ],
+    "1872": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1874": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1878": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1882": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1887": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1891": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1896": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1900": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1904": [
+        "LIB",
+        "CON",
+        "LIBCON"
+    ],
+    "1908": [
+        "LIB",
+        "CON",
+        "LIBCON",
+        "LBR"
+    ],
+    "1911": [
+        "LIB",
+        "CON",
+        "LIBCON",
+        "LBR"
+    ],
+    "1917": [
+        "OPP",
+        "GOV",
+        "LBR"
+    ],
+    "1921": [
+        "LIB",
+        "CON",
+        "PROG",
+        "LBR",
+        "UFA"
+    ],
+    "1925": [
+        "LIB",
+        "CON",
+        "PROG",
+        "LBR",
+        "UFA"
+    ],
+    "1926": [
+        "LIB",
+        "CON",
+        "PROG",
+        "LBR",
+        "UFA"
+    ],
+    "1930": [
+        "LIB",
+        "CON",
+        "PROG",
+        "LBR",
+        "UFA"
+    ],
+    "1935": [
+        "LIB",
+        "CON",
+        "SC",
+        "LBR",
+        "CCF"
+    ],
+    "1940": [
+        "LIB",
+        "CON",
+        "SC",
+        "ND",
+        "CCF"
+    ],
+    "1945": [
+        "LIB",
+        "PC",
+        "SC",
+        "ND",
+        "CCF"
+    ],
+    "1949": [
+        "LIB",
+        "PC",
+        "SC",
+        "ND",
+        "CCF"
+    ],
+    "1953": [
+        "LIB",
+        "PC",
+        "SC",
+        "ND",
+        "CCF"
+    ],
+    "1957": [
+        "LIB",
+        "PC",
+        "SC",
+        "ND",
+        "CCF"
+    ],
+    "1958": [
+        "LIB",
+        "PC",
+        "SC",
+        "ND",
+        "CCF"
+    ],
+    "1962": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "CCF"
+    ],
+    "1963": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "CCF"
+    ],
+    "1965": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "RC"
+    ],
+    "1968": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "RC"
+    ],
+    "1972": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "RC"
+    ],
+    "1974": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "RC"
+    ],
+    "1979": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "RC"
+    ],
+    "1980": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "RC"
+    ],
+    "1984": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "RC"
+    ],
+    "1988": [
+        "LIB",
+        "PC",
+        "SC",
+        "NDP",
+        "REF"
+    ],
+    "1993": [
+        "LIB",
+        "PC",
+        "BQ",
+        "NDP",
+        "REF"
+    ],
+    "1997": [
+        "LIB",
+        "PC",
+        "BQ",
+        "NDP",
+        "REF"
+    ],
+    "2000": [
+        "LIB",
+        "PC",
+        "BQ",
+        "NDP",
+        "CA"
+    ],
+    "2004": [
+        "LIB",
+        "CON",
+        "BQ",
+        "NDP",
+        "CA"
+    ],
+    "2006": [
+        "LIB",
+        "CON",
+        "BQ",
+        "NDP",
+        "GRN"
+    ],
+    "2008": [
+        "LIB",
+        "CON",
+        "BQ",
+        "NDP",
+        "GRN"
+    ],
+    "2011": [
+        "LIB",
+        "CON",
+        "BQ",
+        "NDP",
+        "GRN"
+    ],
+    "2015": [
+        "LIB",
+        "CON",
+        "BQ",
+        "NDP",
+        "GRN"
+    ],
+    "2019": [
+        "LIB",
+        "CON",
+        "BQ",
+        "NDP",
+        "GRN"
+    ],
+    "2021": [
+        "LIB",
+        "CON",
+        "BQ",
+        "NDP",
+        "GRN"
+    ]
+}
