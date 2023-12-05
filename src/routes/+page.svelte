@@ -1,13 +1,25 @@
 <script>
+	import { getElectionYears, getResults } from './../lib/functions/data.js';
 	import { getParties, getProvinces } from '$lib/functions/data.js';
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
 	import Map from '$lib/graphics/Map.svelte';
 	import ProvNodes from '$lib/components/ProvNodes.svelte';
+	import { onMount } from 'svelte';
+	import ElectionYearButton from '../lib/components/ElectionYearButton.svelte';
 
 	const provinces = getProvinces();
 	const parties = getParties();
+	const results = getResults();
+	let electionYears = [];
+	console.log('results', results);
 	console.log('provinces', provinces);
 	console.log('parties', parties);
+
+	onMount(() => {
+		console.log("I'm mounted");
+		electionYears = getElectionYears();
+		console.log('electionYears', electionYears);
+	});
 </script>
 
 <svelte:head>
@@ -27,12 +39,9 @@
 		<div class="bg-pink-100 flex-1">
 			<div class="h-full flex flex-col md:flex-row bg-lime-700">
 				<aside class="md:w-[230px] bg-red-300">
-					{#each Array(20) as _}
-						<div class="px-3 mb-1">1999</div>
+					{#each electionYears as year}
+						<ElectionYearButton {year} on:click={() => console.log(year)} />
 					{/each}
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur enim aliquam beatae similique
-					incidunt earum, ratione, facere architecto atque ducimus eos quia sapiente necessitatibus voluptate
-					ullam. Dignissimos minus animi quod.
 				</aside>
 				<main class="flex-1 bg-indigo-400">
 					<div class="max-w-[1500px] m-auto h-full flex flex-col justify-center bg-amber-100">
