@@ -7,6 +7,7 @@ import results4 from '$lib/data/results/1957_1979.json';
 import results5 from '$lib/data/results/1980_2000.json';
 import results6 from '$lib/data/results/2004_2021.json';
 
+
 const allResults = [...results1, ...results2, ...results3, ...results4, ...results5, ...results6];
 // const allResults = [...results1];
 
@@ -25,6 +26,27 @@ export const getPartiesInYears = () => {
 	});
 	return newNodes;
 };
+
+export const getResultInThisProvince = (results, provCode) => {
+	// console.log("getResultInThisProvince", results, provCode)
+	// console.log(results, provCode)
+	let newSeats = {};
+	const provincialResults = results.results.find((result) => result.prov === provCode);
+	provincialResults.seats.forEach((seat) => {
+		newSeats[seat.party] = { count: seat.count, percentage: seat.percentage };
+	})
+	// console.log("provincialResults", provincialResults)
+	return newSeats;
+}
+
+export const getProvincesInYears = () => {
+	let newNodes = {};
+	allResults.forEach(({ year, results }) => {
+		const provinces = results.map(({ prov }) => prov);
+		newNodes[year] = [...new Set(provinces)];
+	});
+	return newNodes;
+}
 
 export const getResults = () => {
 	const computedResults = allResults.map((election) => {

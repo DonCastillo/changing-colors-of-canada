@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .prov {
-	background-color: #bcd4e6;
+	/* background-color: #bcd4e6; */
 	position: absolute;
 	display: flex;
 	flex-direction: row;
@@ -55,7 +55,7 @@
 	top: 54%;
 	right: 13%;
 }
-#YT {
+#YK {
 	top: 33%;
 	left: 6%;
 }
@@ -69,10 +69,10 @@
 }
 
 .node {
-	/* height: 30px;
-	width: 30px; */
-	height:0;
-	width:0;
+	/* height: 5px; */
+	/* width: 5px; */
+	height: 70px;
+	width: 70px;
 	border-radius: 9999px;
 	display: flex;
 	justify-content: center;

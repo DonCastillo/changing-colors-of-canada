@@ -1,5 +1,13 @@
 <script>
-	import { getElectionYears, getResults, getPartiesInYears } from './../lib/functions/data.js';
+	import {
+		getElectionYears,
+		getResults,
+		getPartiesInYears,
+		getProvincesInYears,
+
+		getResultInThisProvince
+
+	} from './../lib/functions/data.js';
 	import { getParties, getProvinces } from '$lib/functions/data.js';
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
 	import Map from '$lib/graphics/Map.svelte';
@@ -11,13 +19,21 @@
 	let allParties = [];
 	let electionYears = [];
 	let partiesInYears = [];
+	let provincesInYears = [];
 	let allResults = [];
-	let currentYear = electionYears[0] ?? "1867";
+	let currentYear = null;
+
 	$: partiesInCurrentYear = partiesInYears[currentYear];
-	$: resultsInCurrentYear = allResults.filter(result => result.year === currentYear)[0];
+	$: resultsInCurrentYear = allResults.filter((result) => result.year === currentYear)[0];
+	// $: provincesInCurrentYear = (provincesInYears[currentYear])?.map((prov, index) => {id: index, prov });
+	$: tempProvincesInCurrentYear = provincesInYears[currentYear];
+	$: provincesInCurrentYear =
+		tempProvincesInCurrentYear?.map((prov, index) => ({ id: index, code: prov })) ?? [];
+
+	$: console.log('currentYear', currentYear);
 	$: console.log('partiesInCurrentYear', partiesInCurrentYear);
 	$: console.log('resultsInCurrentYear', resultsInCurrentYear);
-
+	$: console.log('provincesInCurrentYear', provincesInCurrentYear);
 
 	onMount(() => {
 		console.log("I'm mounted");
@@ -25,16 +41,20 @@
 		allParties = getParties();
 		electionYears = getElectionYears();
 		partiesInYears = getPartiesInYears();
+		provincesInYears = getProvincesInYears();
 		allResults = getResults();
+		currentYear = electionYears[0] ?? '1867';
 
-		console.log('electionYears', electionYears);
-		console.log('partiesInYears', partiesInYears);
-		console.log('allResults', allResults);
+		// console.log('-------- onMount --------');
+		// console.log('electionYears', electionYears);
+		// console.log('partiesInYears', partiesInYears);
+		// console.log('allResults', allResults);
+		// console.log('provincesInYears', provincesInYears);
+		// console.log('-------- onMount --------');
 	});
 
 	function changeYearHandler(year) {
-		// const 
-		// console.log(year);
+		currentYear = year;
 	}
 </script>
 
@@ -63,13 +83,21 @@
 					<div class="max-w-[1500px] m-auto h-full flex flex-col justify-center bg-amber-100">
 						<div class="bg-amber-100 relative">
 							<Map />
-							{#each allProvinces as province}
-								<ProvNodes 
-									provCode={province.code} 
-									provName={province.name}
-									nodes={[]} 
-								/>
-							{/each}
+							<!-- {provincesInCurrentYear} -->
+							<!-- {#each allProvinces as province }
+								<ProvNodes provCode={province} provName={province} />
+							{/each} -->
+							{#key currentYear}
+								{#each provincesInCurrentYear as province}
+									<ProvNodes
+										provCode={province.code}
+										provName={province.code}
+										electionYear={currentYear}
+										provincialResults={getResultInThisProvince(resultsInCurrentYear, province.code)}
+										partiesRunning={partiesInCurrentYear}
+									/>
+								{/each}
+							{/key}
 						</div>
 					</div>
 				</main>
