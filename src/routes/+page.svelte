@@ -2,7 +2,7 @@
 	import { getPartiesInCurrentYear, getResultsByParty } from '$lib/functions/data.js';
 	import { nextState, prevState } from '$lib/functions/node.js';
 	import { tooltip } from '$lib/functions/node.js';
-	import gsap from 'gsap';
+	import {gsap} from 'gsap';
 
 	import {
 		getElectionYears,
