@@ -158,6 +158,28 @@
 		gsap.timeline()
 	];
 
+	// NT Nodes
+	let NTNode0, NTNode1, NTNode2, NTNode3, NTNode4, NTNode5;
+	let NTNodes = [];
+	let NTTimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
+	// NU Nodes
+	let NUNode0, NUNode1, NUNode2, NUNode3, NUNode4, NUNode5;
+	let NUNodes = [];
+	let NUTimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
 	$: partiesInCurrentYear = getPartiesInCurrentYear(partiesInYears, currentYear, NUMBER_OF_NODES);
 	$: resultsInCurrentYear = allResults.filter((result) => result.year === currentYear)[0];
 	$: tempProvincesInCurrentYear = provincesInYears[currentYear];
@@ -179,6 +201,8 @@
 	$: animatePENodes(currentYear);
 	$: animateNLNodes(currentYear);
 	$: animateYKNodes(currentYear);
+	$: animateNTNodes(currentYear);
+	$: animateNUNodes(currentYear);
 
 	onMount(() => {
 		BCNodes = [BCNode0, BCNode1, BCNode2, BCNode3, BCNode4, BCNode5];
@@ -192,6 +216,8 @@
 		PENodes = [PENode0, PENode1, PENode2, PENode3, PENode4, PENode5];
 		NLNodes = [NLNode0, NLNode1, NLNode2, NLNode3, NLNode4, NLNode5];
 		YKNodes = [YKNode0, YKNode1, YKNode2, YKNode3, YKNode4, YKNode5];
+		NTNodes = [NTNode0, NTNode1, NTNode2, NTNode3, NTNode4, NTNode5];
+		NUNodes = [NUNode0, NUNode1, NUNode2, NUNode3, NUNode4, NUNode5];
 		animateBCNodes(currentYear);
 		animateABNodes(currentYear);
 		animateSKNodes(currentYear);
@@ -203,6 +229,8 @@
 		animatePENodes(currentYear);
 		animateNLNodes(currentYear);
 		animateYKNodes(currentYear);
+		animateNTNodes(currentYear);
+		animateNUNodes(currentYear);
 	});
 
 	// BC Nodes Animations
@@ -444,7 +472,7 @@
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
 		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
-		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'PE');
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'NL');
 
 		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
 			const currentParty = partiesInCurrentYear[i];
@@ -470,7 +498,7 @@
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
 		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
-		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'PE');
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'YK');
 
 		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
 			const currentParty = partiesInCurrentYear[i];
@@ -487,6 +515,58 @@
 				YKTimelines[i].to(YKNodes[i], nextState(newScale, color));
 			} else {
 				YKTimelines[i]?.to(YKNodes[i], prevState());
+			}
+		}
+	}
+
+	// NT Nodes Animations
+	function animateNTNodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'NT');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for ON Nodes
+			if (NTNodes[i]) {
+				NTNodes[i].textContent = `${currentParty}`;
+				NTNodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (NTTimelines[i]) {
+				NTTimelines[i].to(NTNodes[i], nextState(newScale, color));
+			} else {
+				NTTimelines[i]?.to(NTNodes[i], prevState());
+			}
+		}
+	}
+
+	// NU Nodes Animations
+	function animateNUNodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'NU');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for ON Nodes
+			if (NUNodes[i]) {
+				NUNodes[i].textContent = `${currentParty}`;
+				NUNodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (NUTimelines[i]) {
+				NUTimelines[i].to(NUNodes[i], nextState(newScale, color));
+			} else {
+				NUTimelines[i]?.to(NUNodes[i], prevState());
 			}
 		}
 	}
@@ -640,6 +720,28 @@
 								<div class="node node-5" bind:this={YKNode4}></div>
 								<div class="node node-5" bind:this={YKNode5}></div>
 								<div class="w-full bg-slate-900 text-center z-10">YK</div>
+							</div>
+
+							<!-- NT Nodes -->
+							<div class="prov" id="NT">
+								<div class="node node-1" bind:this={NTNode0}></div>
+								<div class="node node-2" bind:this={NTNode1}></div>
+								<div class="node node-3" bind:this={NTNode2}></div>
+								<div class="node node-4" bind:this={NTNode3}></div>
+								<div class="node node-5" bind:this={NTNode4}></div>
+								<div class="node node-5" bind:this={NTNode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">NT</div>
+							</div>
+
+							<!-- NU Nodes -->
+							<div class="prov" id="NU">
+								<div class="node node-1" bind:this={NUNode0}></div>
+								<div class="node node-2" bind:this={NUNode1}></div>
+								<div class="node node-3" bind:this={NUNode2}></div>
+								<div class="node node-4" bind:this={NUNode3}></div>
+								<div class="node node-5" bind:this={NUNode4}></div>
+								<div class="node node-5" bind:this={NUNode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">NU</div>
 							</div>
 						</div>
 					</div>
