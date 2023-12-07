@@ -32,7 +32,7 @@ export const getResultInThisProvince = (results, provCode) => {
 	let newSeats = {};
 	const provincialResults = results.results.find((result) => result.prov === provCode);
 	if (!provincialResults) return newSeats;
-	
+
 	provincialResults.seats.forEach((seat) => {
 		newSeats[seat.party] = { count: seat.count, percentage: seat.percentage };
 	});
@@ -71,3 +71,11 @@ export const getElectionYears = () => {
 	const years = allResults.map((result) => result.year);
 	return [...new Set(years)];
 };
+
+
+export const getPartyInformation = (partyCode) => {
+	console.log("inside get party information: ", partyCode);
+	const partyInformation = getParties().find((party) => party.code === partyCode);
+	// console.log("partyInformation", partyInformation)
+	return { color: partyInformation?.color ?? "#fff", fullName: partyInformation?.name ?? "" };
+}

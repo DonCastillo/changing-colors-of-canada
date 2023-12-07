@@ -22,7 +22,7 @@
 	{
 		"name": "Liberal-Conservative",
 		"code": "LIBCON",
-		"color": "#1A4782"
+		"color": "#475569"
 	},
 	{
 		"name": "Progressive Conservative",
@@ -97,6 +97,6 @@
 	{
 		"name": "Independents / Other",
 		"code": "OTHER",
-		"color": "#DCDCDC"
+		"color": "#777777"
 	}
 ]
