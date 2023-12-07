@@ -26,7 +26,7 @@
 
 	const NUMBER_OF_NODES = 6;
 
-	// BC
+	// BC Nodes
 	let BCNode0, BCNode1, BCNode2, BCNode3, BCNode4, BCNode5;
 	let BCNodes = [];
 	let BCTimelines = [
@@ -38,10 +38,34 @@
 		gsap.timeline()
 	];
 
-	// AB
+	// AB Nodes
 	let ABNode0, ABNode1, ABNode2, ABNode3, ABNode4, ABNode5;
 	let ABNodes = [];
 	let ABTimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
+	// SK Nodes
+	let SKNode0, SKNode1, SKNode2, SKNode3, SKNode4, SKNode5;
+	let SKNodes = [];
+	let SKTimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
+	// MB Nodes
+	let MBNode0, MBNode1, MBNode2, MBNode3, MBNode4, MBNode5;
+	let MBNodes = [];
+	let MBTimelines = [
 		gsap.timeline(),
 		gsap.timeline(),
 		gsap.timeline(),
@@ -62,12 +86,17 @@
 	$: console.log('provincesInCurrentYear', provincesInCurrentYear);
 	$: animateBCNodes(currentYear);
 	$: animateABNodes(currentYear);
+	$: animateSKNodes(currentYear);
+	$: animateMBNodes(currentYear);
 
 	onMount(() => {
 		BCNodes = [BCNode0, BCNode1, BCNode2, BCNode3, BCNode4, BCNode5];
 		ABNodes = [ABNode0, ABNode1, ABNode2, ABNode3, ABNode4, ABNode5];
+		SKNodes = [SKNode0, SKNode1, SKNode2, SKNode3, SKNode4, SKNode5];
+		MBNodes = [MBNode0, MBNode1, MBNode2, MBNode3, MBNode4, MBNode5];
 	});
 
+	// BC Nodes Animations
 	function animateBCNodes(currentYear) {
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
@@ -93,6 +122,7 @@
 		}
 	}
 
+	// AB Nodes Animations
 	function animateABNodes(currentYear) {
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
@@ -114,6 +144,58 @@
 				ABTimelines[i].to(ABNodes[i], nextState(newScale, color));
 			} else {
 				ABTimelines[i]?.to(ABNodes[i], prevState());
+			}
+		}
+	}
+
+	// SK Nodes Animations
+	function animateSKNodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'AB');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for SK Nodes
+			if (SKNodes[i]) {
+				SKNodes[i].textContent = `${currentParty}`;
+				SKNodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (SKTimelines[i]) {
+				SKTimelines[i].to(SKNodes[i], nextState(newScale, color));
+			} else {
+				SKTimelines[i]?.to(SKNodes[i], prevState());
+			}
+		}
+	}
+
+		// MB Nodes Animations
+		function animateMBNodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'AB');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for SK Nodes
+			if (MBNodes[i]) {
+				MBNodes[i].textContent = `${currentParty}`;
+				MBNodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (MBTimelines[i]) {
+				MBTimelines[i].to(MBNodes[i], nextState(newScale, color));
+			} else {
+				MBTimelines[i]?.to(MBNodes[i], prevState());
 			}
 		}
 	}
@@ -159,7 +241,7 @@
 								<div class="w-full bg-slate-900 text-center z-10">BC</div>
 							</div>
 
-							<!-- BC Nodes -->
+							<!-- AB Nodes -->
 							<div class="prov" id="AB">
 								<div class="node node-1" bind:this={ABNode0}></div>
 								<div class="node node-2" bind:this={ABNode1}></div>
@@ -168,6 +250,28 @@
 								<div class="node node-5" bind:this={ABNode4}></div>
 								<div class="node node-5" bind:this={ABNode5}></div>
 								<div class="w-full bg-slate-900 text-center z-10">AB</div>
+							</div>
+
+							<!-- SK Nodes -->
+							<div class="prov" id="SK">
+								<div class="node node-1" bind:this={SKNode0}></div>
+								<div class="node node-2" bind:this={SKNode1}></div>
+								<div class="node node-3" bind:this={SKNode2}></div>
+								<div class="node node-4" bind:this={SKNode3}></div>
+								<div class="node node-5" bind:this={SKNode4}></div>
+								<div class="node node-5" bind:this={SKNode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">SK</div>
+							</div>
+
+							<!-- MB Nodes -->
+							<div class="prov" id="MB">
+								<div class="node node-1" bind:this={MBNode0}></div>
+								<div class="node node-2" bind:this={MBNode1}></div>
+								<div class="node node-3" bind:this={MBNode2}></div>
+								<div class="node node-4" bind:this={MBNode3}></div>
+								<div class="node node-5" bind:this={MBNode4}></div>
+								<div class="node node-5" bind:this={MBNode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">MB</div>
 							</div>
 						</div>
 					</div>
