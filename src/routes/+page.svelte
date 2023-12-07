@@ -1,6 +1,6 @@
 <script>
-	import { getPartiesInCurrentYear, getResultsByParty } from './../lib/functions/data.js';
-	import { nextState, prevState } from './../lib/functions/node.js';
+	import { getPartiesInCurrentYear, getResultsByParty } from '$lib/functions/data.js';
+	import { nextState, prevState } from '$lib/functions/node.js';
 	import { tooltip } from '$lib/functions/node.js';
 	import gsap from 'gsap';
 
@@ -16,7 +16,7 @@
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
 	import Map from '$lib/graphics/Map.svelte';
 	import { onMount } from 'svelte';
-	import ElectionYearButton from '../lib/components/ElectionYearButton.svelte';
+	import ElectionYearButton from '$lib/components/ElectionYearButton.svelte';
 
 	let electionYears = getElectionYears();
 	let partiesInYears = getPartiesInYears();
