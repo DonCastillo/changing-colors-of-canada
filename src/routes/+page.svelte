@@ -588,7 +588,10 @@
 	<!-- <div class="bg-filter absolute top-0 left-0 w-full h-full bg-black opacity-95"></div> -->
 	<!-- <div class="z-10">Don</div> -->
 	<div class="min-h-screen flex flex-col justify-between relative z-10">
-		<header class="bg-lime-200"></header>
+		<header class="p-4 py-10 pt-12 text-center">
+			<h1 class="font-playfair-display font-bold text-3xl md:text-5xl">Changing Colors of Canada</h1>
+			<p class="font-cormorant font-light text-2xl md:text-3xl">Explore how each province or territory has voted through the years.</p>
+		</header>
 		<div class="flex-1">
 			<div class="h-full flex flex-col md:flex-row">
 				<aside class="flex py-5 px-5 md:block md:w-[170px] max-h-screen overflow-y-auto">
@@ -756,6 +759,6 @@
 	.bg-drop {
 		background-blend-mode: luminosity;
 		background-color: black;
-		filter: opacity(5%);
+		filter: opacity(15%);
 	}
 </style>

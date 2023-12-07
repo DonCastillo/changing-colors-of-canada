@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-playfair-display {
+	font-family: 'Playfair Display', serif;
+}
+
+.font-cormorant {
+	font-family: 'Cormorant', serif;
+}
+
 .prov {
 	/* background-color: #bcd4e6; */
 	position: absolute;
