@@ -1,12 +1,12 @@
 <script>
+	import gsap from 'gsap';
+
 	import {
 		getElectionYears,
 		getResults,
 		getPartiesInYears,
 		getProvincesInYears,
-
 		getResultInThisProvince
-
 	} from './../lib/functions/data.js';
 	import { getParties, getProvinces } from '$lib/functions/data.js';
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
