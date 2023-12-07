@@ -28,8 +28,6 @@ export const getPartiesInYears = () => {
 };
 
 export const getResultInThisProvince = (results, provCode) => {
-	// console.log("getResultInThisProvince", results, provCode)
-	// console.log(results, provCode)
 	let newSeats = {};
 	const provincialResults = results.results.find((result) => result.prov === provCode);
 	if (!provincialResults) return newSeats;
@@ -37,7 +35,6 @@ export const getResultInThisProvince = (results, provCode) => {
 	provincialResults.seats.forEach((seat) => {
 		newSeats[seat.party] = { count: seat.count, percentage: seat.percentage };
 	});
-	// console.log("provincialResults", provincialResults)
 	return newSeats;
 };
 

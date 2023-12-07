@@ -582,12 +582,12 @@
 
 <div id="home" class="min-h-screen text-white relative">
 	<div
-		class="bg-drop absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-center z-[-1]"
+		class="bg-drop absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-center"
 		style="background-image:url({parliamentBg})"
 	></div>
 	<!-- <div class="bg-filter absolute top-0 left-0 w-full h-full bg-black opacity-95"></div> -->
 	<!-- <div class="z-10">Don</div> -->
-	<div class="min-h-screen flex flex-col justify-between">
+	<div class="min-h-screen flex flex-col justify-between relative z-10">
 		<header class="bg-lime-200"></header>
 		<div class="flex-1">
 			<div class="h-full flex flex-col md:flex-row">
@@ -598,7 +598,7 @@
 				</aside>
 				<main class="flex-1">
 					<div class="max-w-[1000px] m-auto h-full flex flex-col justify-center">
-						<div class="relative bg-lime-50">
+						<div class="relative">
 							<Map />
 
 							<!-- BC Nodes -->
