@@ -22,6 +22,14 @@
 
 }
 
+/* @media screen and (max-width: 768px) {
+	.prov {
+		font-size:0.5rem;
+		width: 50px;
+	}
+	
+} */
+
 #BC {
 	top: 57%;
 	left: 7%;

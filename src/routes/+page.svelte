@@ -591,9 +591,9 @@
 		<header class="bg-lime-200"></header>
 		<div class="flex-1">
 			<div class="h-full flex flex-col md:flex-row">
-				<aside class="md:w-[230px] max-h-screen overflow-y-auto">
+				<aside class="flex py-5 px-5 md:block md:w-[170px] max-h-screen overflow-y-auto">
 					{#each electionYears as year}
-						<ElectionYearButton {year} on:click={() => changeYearHandler(year)} />
+						<ElectionYearButton {year} {currentYear} on:click={() => changeYearHandler(year)} />
 					{/each}
 				</aside>
 				<main class="flex-1">
