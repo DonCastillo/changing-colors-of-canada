@@ -1,4 +1,5 @@
 <script>
+	import { getResultsByParty } from './../lib/functions/data.js';
 	import { nextState, prevState } from './../lib/functions/node.js';
 	import { tooltip } from '$lib/functions/node.js';
 	import gsap from 'gsap';
@@ -9,15 +10,15 @@
 		getPartiesInYears,
 		getProvincesInYears,
 		getResultInThisProvince,
-		getPartyInformation
-	} from './../lib/functions/data.js';
+		getPartyInformation,
+		calculateScale
+	} from '$lib/functions/data.js';
 	import { getParties, getProvinces } from '$lib/functions/data.js';
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
 	import Map from '$lib/graphics/Map.svelte';
 	import ProvNodes from '$lib/components/ProvNodes.svelte';
 	import { onMount } from 'svelte';
 	import ElectionYearButton from '../lib/components/ElectionYearButton.svelte';
-
 
 	let electionYears = getElectionYears();
 	let partiesInYears = getPartiesInYears();
@@ -26,7 +27,6 @@
 	let currentYear = electionYears[0] ?? '1867';
 
 	const NUMBER_OF_NODES = 6;
-	const MAX_NODE_HEIGHT = 300;
 
 	// BC
 	let BCNode0, BCNode1, BCNode2, BCNode3, BCNode4, BCNode5;
@@ -40,12 +40,11 @@
 		gsap.timeline()
 	];
 
-
-
 	$: partiesInCurrentYear = getFinalPartiesInYears(partiesInYears, currentYear);
 	$: resultsInCurrentYear = allResults.filter((result) => result.year === currentYear)[0];
 	$: tempProvincesInCurrentYear = provincesInYears[currentYear];
-	$: provincesInCurrentYear = tempProvincesInCurrentYear?.map((prov, index) => ({ id: index, code: prov })) ?? [];
+	$: provincesInCurrentYear =
+		tempProvincesInCurrentYear?.map((prov, index) => ({ id: index, code: prov })) ?? [];
 
 	$: console.log('currentYear', currentYear);
 	$: console.log('partiesInCurrentYear', partiesInCurrentYear);
@@ -69,19 +68,6 @@
 		}
 		finalPartyInYears.push('OTHER');
 		return finalPartyInYears;
-	}
-
-	function calculateScale(provincialResults, currentParty) {
-		const currentPartyPercentage = provincialResults[currentParty]?.percentage ?? 0;
-		return (currentPartyPercentage / 100) * MAX_NODE_HEIGHT;
-	}
-
-	function getResultsByParty(provincialResults, currentParty) {
-		if (provincialResults[currentParty]) {
-			return provincialResults[currentParty];
-		} else {
-			return { count: 0, percentage: 0 };
-		}
 	}
 
 	function animateBCNodes(currentYear) {
@@ -144,6 +130,8 @@
 								<div class="node node-5" bind:this={BCNode5}></div>
 								<div class="w-full bg-slate-900 text-center z-10">BC</div>
 							</div>
+
+							
 						</div>
 					</div>
 				</main>

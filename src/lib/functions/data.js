@@ -7,6 +7,7 @@ import results4 from '$lib/data/results/1957_1979.json';
 import results5 from '$lib/data/results/1980_2000.json';
 import results6 from '$lib/data/results/2004_2021.json';
 
+const MAX_NODE_HEIGHT = 300;
 const allResults = [...results1, ...results2, ...results3, ...results4, ...results5, ...results6];
 // const allResults = [...results1];
 
@@ -72,10 +73,20 @@ export const getElectionYears = () => {
 	return [...new Set(years)];
 };
 
-
 export const getPartyInformation = (partyCode) => {
-	console.log("inside get party information: ", partyCode);
 	const partyInformation = getParties().find((party) => party.code === partyCode);
-	// console.log("partyInformation", partyInformation)
-	return { color: partyInformation?.color ?? "#fff", fullName: partyInformation?.name ?? "" };
-}
+	return { color: partyInformation?.color ?? '#fff', fullName: partyInformation?.name ?? '' };
+};
+
+export const calculateScale = (provincialResults, currentParty) => {
+	const currentPartyPercentage = provincialResults[currentParty]?.percentage ?? 0;
+	return (currentPartyPercentage / 100) * MAX_NODE_HEIGHT;
+};
+
+export const getResultsByParty = (provincialResults, currentParty) => {
+	if (provincialResults[currentParty]) {
+		return provincialResults[currentParty];
+	} else {
+		return { count: 0, percentage: 0 };
+	}
+};
