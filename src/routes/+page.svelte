@@ -110,6 +110,54 @@
 		gsap.timeline()
 	];
 
+	// NS Nodes
+	let NSNode0, NSNode1, NSNode2, NSNode3, NSNode4, NSNode5;
+	let NSNodes = [];
+	let NSTimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
+	// PE Nodes
+	let PENode0, PENode1, PENode2, PENode3, PENode4, PENode5;
+	let PENodes = [];
+	let PETimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
+	// NL Nodes
+	let NLNode0, NLNode1, NLNode2, NLNode3, NLNode4, NLNode5;
+	let NLNodes = [];
+	let NLTimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
+	// YK Nodes
+	let YKNode0, YKNode1, YKNode2, YKNode3, YKNode4, YKNode5;
+	let YKNodes = [];
+	let YKTimelines = [
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline(),
+		gsap.timeline()
+	];
+
 	$: partiesInCurrentYear = getPartiesInCurrentYear(partiesInYears, currentYear, NUMBER_OF_NODES);
 	$: resultsInCurrentYear = allResults.filter((result) => result.year === currentYear)[0];
 	$: tempProvincesInCurrentYear = provincesInYears[currentYear];
@@ -127,6 +175,10 @@
 	$: animateONNodes(currentYear);
 	$: animateQCNodes(currentYear);
 	$: animateNBNodes(currentYear);
+	$: animateNSNodes(currentYear);
+	$: animatePENodes(currentYear);
+	$: animateNLNodes(currentYear);
+	$: animateYKNodes(currentYear);
 
 	onMount(() => {
 		BCNodes = [BCNode0, BCNode1, BCNode2, BCNode3, BCNode4, BCNode5];
@@ -136,6 +188,21 @@
 		ONNodes = [ONNode0, ONNode1, ONNode2, ONNode3, ONNode4, ONNode5];
 		QCNodes = [QCNode0, QCNode1, QCNode2, QCNode3, QCNode4, QCNode5];
 		NBNodes = [NBNode0, NBNode1, NBNode2, NBNode3, NBNode4, NBNode5];
+		NSNodes = [NSNode0, NSNode1, NSNode2, NSNode3, NSNode4, NSNode5];
+		PENodes = [PENode0, PENode1, PENode2, PENode3, PENode4, PENode5];
+		NLNodes = [NLNode0, NLNode1, NLNode2, NLNode3, NLNode4, NLNode5];
+		YKNodes = [YKNode0, YKNode1, YKNode2, YKNode3, YKNode4, YKNode5];
+		animateBCNodes(currentYear);
+		animateABNodes(currentYear);
+		animateSKNodes(currentYear);
+		animateMBNodes(currentYear);
+		animateONNodes(currentYear);
+		animateQCNodes(currentYear);
+		animateNBNodes(currentYear);
+		animateNSNodes(currentYear);
+		animatePENodes(currentYear);
+		animateNLNodes(currentYear);
+		animateYKNodes(currentYear);
 	});
 
 	// BC Nodes Animations
@@ -195,7 +262,7 @@
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
 		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
-		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'AB');
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'SK');
 
 		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
 			const currentParty = partiesInCurrentYear[i];
@@ -221,7 +288,7 @@
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
 		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
-		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'AB');
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'MB');
 
 		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
 			const currentParty = partiesInCurrentYear[i];
@@ -247,7 +314,7 @@
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
 		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
-		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'AB');
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'ON');
 
 		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
 			const currentParty = partiesInCurrentYear[i];
@@ -273,7 +340,7 @@
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
 		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
-		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'AB');
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'QC');
 
 		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
 			const currentParty = partiesInCurrentYear[i];
@@ -299,7 +366,7 @@
 		if (!currentYear) return;
 		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
 		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
-		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'AB');
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'NB');
 
 		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
 			const currentParty = partiesInCurrentYear[i];
@@ -316,6 +383,110 @@
 				NBTimelines[i].to(NBNodes[i], nextState(newScale, color));
 			} else {
 				NBTimelines[i]?.to(NBNodes[i], prevState());
+			}
+		}
+	}
+
+	// NS Nodes Animations
+	function animateNSNodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'NS');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for ON Nodes
+			if (NSNodes[i]) {
+				NSNodes[i].textContent = `${currentParty}`;
+				NSNodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (NSTimelines[i]) {
+				NSTimelines[i].to(NSNodes[i], nextState(newScale, color));
+			} else {
+				NSTimelines[i]?.to(NSNodes[i], prevState());
+			}
+		}
+	}
+
+	// PE Nodes Animations
+	function animatePENodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'PE');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for ON Nodes
+			if (PENodes[i]) {
+				PENodes[i].textContent = `${currentParty}`;
+				PENodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (PETimelines[i]) {
+				PETimelines[i].to(PENodes[i], nextState(newScale, color));
+			} else {
+				PETimelines[i]?.to(PENodes[i], prevState());
+			}
+		}
+	}
+
+	// NL Nodes Animations
+	function animateNLNodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'PE');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for ON Nodes
+			if (NLNodes[i]) {
+				NLNodes[i].textContent = `${currentParty}`;
+				NLNodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (NLTimelines[i]) {
+				NLTimelines[i].to(NLNodes[i], nextState(newScale, color));
+			} else {
+				NLTimelines[i]?.to(NLNodes[i], prevState());
+			}
+		}
+	}
+
+	// YK Nodes Animations
+	function animateYKNodes(currentYear) {
+		if (!currentYear) return;
+		if (!partiesInCurrentYear || partiesInCurrentYear.length === 0) return;
+		if (!resultsInCurrentYear || Object.keys(resultsInCurrentYear).length === 0) return;
+		const provincialResultsThisYear = getResultInThisProvince(resultsInCurrentYear, 'PE');
+
+		for (let i = 0; NUMBER_OF_NODES > i; ++i) {
+			const currentParty = partiesInCurrentYear[i];
+			const newScale = calculateScale(provincialResultsThisYear, currentParty);
+			const resultsByParty = getResultsByParty(provincialResultsThisYear, currentParty);
+			const { color, fullName } = getPartyInformation(currentParty);
+
+			// GSAP Animations for ON Nodes
+			if (YKNodes[i]) {
+				YKNodes[i].textContent = `${currentParty}`;
+				YKNodes[i].title = tooltip(fullName, resultsByParty.count, resultsByParty.percentage);
+			}
+			if (YKTimelines[i]) {
+				YKTimelines[i].to(YKNodes[i], nextState(newScale, color));
+			} else {
+				YKTimelines[i]?.to(YKNodes[i], prevState());
 			}
 		}
 	}
@@ -425,6 +596,50 @@
 								<div class="node node-5" bind:this={NBNode4}></div>
 								<div class="node node-5" bind:this={NBNode5}></div>
 								<div class="w-full bg-slate-900 text-center z-10">NB</div>
+							</div>
+
+							<!-- NS Nodes -->
+							<div class="prov" id="NS">
+								<div class="node node-1" bind:this={NSNode0}></div>
+								<div class="node node-2" bind:this={NSNode1}></div>
+								<div class="node node-3" bind:this={NSNode2}></div>
+								<div class="node node-4" bind:this={NSNode3}></div>
+								<div class="node node-5" bind:this={NSNode4}></div>
+								<div class="node node-5" bind:this={NSNode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">NS</div>
+							</div>
+
+							<!-- PE Nodes -->
+							<div class="prov" id="PE">
+								<div class="node node-1" bind:this={PENode0}></div>
+								<div class="node node-2" bind:this={PENode1}></div>
+								<div class="node node-3" bind:this={PENode2}></div>
+								<div class="node node-4" bind:this={PENode3}></div>
+								<div class="node node-5" bind:this={PENode4}></div>
+								<div class="node node-5" bind:this={PENode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">PE</div>
+							</div>
+
+							<!-- NL Nodes -->
+							<div class="prov" id="NL">
+								<div class="node node-1" bind:this={NLNode0}></div>
+								<div class="node node-2" bind:this={NLNode1}></div>
+								<div class="node node-3" bind:this={NLNode2}></div>
+								<div class="node node-4" bind:this={NLNode3}></div>
+								<div class="node node-5" bind:this={NLNode4}></div>
+								<div class="node node-5" bind:this={NLNode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">NL</div>
+							</div>
+
+							<!-- YK Nodes -->
+							<div class="prov" id="YK">
+								<div class="node node-1" bind:this={YKNode0}></div>
+								<div class="node node-2" bind:this={YKNode1}></div>
+								<div class="node node-3" bind:this={YKNode2}></div>
+								<div class="node node-4" bind:this={YKNode3}></div>
+								<div class="node node-5" bind:this={YKNode4}></div>
+								<div class="node node-5" bind:this={YKNode5}></div>
+								<div class="w-full bg-slate-900 text-center z-10">YK</div>
 							</div>
 						</div>
 					</div>
