@@ -90,3 +90,17 @@ export const getResultsByParty = (provincialResults, currentParty) => {
 		return { count: 0, percentage: 0 };
 	}
 };
+
+export const getPartiesInCurrentYear = (partiesInYears, currentYear, numberOfNodes) => {
+	let partiesInCurrentYear = partiesInYears[currentYear];
+	let finalPartiesInCurrentYear = [];
+	for (let i = 0; numberOfNodes - 1 > i; ++i) {
+		if (partiesInCurrentYear[i]) {
+			finalPartiesInCurrentYear.push(partiesInCurrentYear[i]);
+		} else {
+			finalPartiesInCurrentYear.push(undefined);
+		}
+	}
+	finalPartiesInCurrentYear.push('OTHER');
+	return finalPartiesInCurrentYear;
+}

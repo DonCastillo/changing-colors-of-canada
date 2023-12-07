@@ -1,5 +1,5 @@
 <script>
-	import { getResultsByParty } from './../lib/functions/data.js';
+	import { getPartiesInCurrentYear, getResultsByParty } from './../lib/functions/data.js';
 	import { nextState, prevState } from './../lib/functions/node.js';
 	import { tooltip } from '$lib/functions/node.js';
 	import gsap from 'gsap';
@@ -13,10 +13,8 @@
 		getPartyInformation,
 		calculateScale
 	} from '$lib/functions/data.js';
-	import { getParties, getProvinces } from '$lib/functions/data.js';
 	import parliamentBg from '$lib/images/parliament-bg.jpg';
 	import Map from '$lib/graphics/Map.svelte';
-	import ProvNodes from '$lib/components/ProvNodes.svelte';
 	import { onMount } from 'svelte';
 	import ElectionYearButton from '../lib/components/ElectionYearButton.svelte';
 
@@ -40,7 +38,7 @@
 		gsap.timeline()
 	];
 
-	$: partiesInCurrentYear = getFinalPartiesInYears(partiesInYears, currentYear);
+	$: partiesInCurrentYear = getPartiesInCurrentYear(partiesInYears, currentYear, NUMBER_OF_NODES);
 	$: resultsInCurrentYear = allResults.filter((result) => result.year === currentYear)[0];
 	$: tempProvincesInCurrentYear = provincesInYears[currentYear];
 	$: provincesInCurrentYear =
@@ -56,19 +54,6 @@
 		BCNodes = [BCNode0, BCNode1, BCNode2, BCNode3, BCNode4, BCNode5];
 	});
 
-	function getFinalPartiesInYears(partiesInYears, currentYear) {
-		let tempPartyInYears = partiesInYears[currentYear];
-		let finalPartyInYears = [];
-		for (let i = 0; NUMBER_OF_NODES - 1 > i; ++i) {
-			if (tempPartyInYears[i]) {
-				finalPartyInYears.push(tempPartyInYears[i]);
-			} else {
-				finalPartyInYears.push(undefined);
-			}
-		}
-		finalPartyInYears.push('OTHER');
-		return finalPartyInYears;
-	}
 
 	function animateBCNodes(currentYear) {
 		if (!currentYear) return;
