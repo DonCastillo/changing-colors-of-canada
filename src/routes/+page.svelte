@@ -2,7 +2,7 @@
 	import { getPartiesInCurrentYear, getResultsByParty } from '$lib/functions/data.js';
 	import { nextState, prevState } from '$lib/functions/node.js';
 	import { tooltip } from '$lib/functions/node.js';
-	import {gsap} from 'gsap';
+	import { gsap } from 'gsap';
 
 	import {
 		getElectionYears,
@@ -589,8 +589,12 @@
 	<!-- <div class="z-10">Don</div> -->
 	<div class="min-h-screen flex flex-col justify-between relative z-10">
 		<header class="p-4 py-10 pt-12 text-center">
-			<h1 class="font-playfair-display font-bold text-3xl md:text-5xl">Changing Colors of Canada</h1>
-			<p class="font-cormorant font-light text-2xl md:text-3xl">Explore how each province or territory has voted through the years.</p>
+			<h1 class="font-playfair-display font-bold text-3xl md:text-5xl">
+				Changing Colors of Canada
+			</h1>
+			<p class="font-cormorant font-light text-2xl md:text-3xl">
+				Explore how each province or territory has voted through the years.
+			</p>
 		</header>
 		<div class="flex-1">
 			<div class="h-full flex flex-col md:flex-row">
@@ -600,7 +604,18 @@
 					{/each}
 				</aside>
 				<main class="flex-1">
-					<div class="max-w-[1000px] m-auto h-full flex flex-col justify-center">
+					<div class="max-w-[1000px] m-auto h-full flex flex-col justify-start">
+						<div class="flex flex-row flex-wrap justify-center items-center px-5 py-2">
+							{#each partiesInCurrentYear as party, i}
+								{#if party}
+									{@const { color, fullName } = getPartyInformation(party)}
+									<div class="text-sm mr-5 mb-2 flex flex-row justify-center items-center">
+										<div class="w-7 h-7 mr-1" style:background-color={color}></div>
+										<div>{party} - {fullName}</div>
+									</div>
+								{/if}
+							{/each}
+						</div>
 						<div class="relative">
 							<Map />
 

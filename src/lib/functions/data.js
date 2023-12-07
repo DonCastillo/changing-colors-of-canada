@@ -100,4 +100,4 @@ export const getPartiesInCurrentYear = (partiesInYears, currentYear, numberOfNod
 	}
 	finalPartiesInCurrentYear.push('OTHER');
 	return finalPartiesInCurrentYear;
-}
+};
