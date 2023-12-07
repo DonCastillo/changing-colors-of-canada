@@ -597,8 +597,8 @@
 					{/each}
 				</aside>
 				<main class="flex-1">
-					<div class="max-w-[1500px] m-auto h-full flex flex-col justify-center">
-						<div class="relative">
+					<div class="max-w-[1000px] m-auto h-full flex flex-col justify-center">
+						<div class="relative bg-lime-50">
 							<Map />
 
 							<!-- BC Nodes -->

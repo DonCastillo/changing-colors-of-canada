@@ -7,7 +7,7 @@ import results4 from '$lib/data/results/1957_1979.json';
 import results5 from '$lib/data/results/1980_2000.json';
 import results6 from '$lib/data/results/2004_2021.json';
 
-const MAX_NODE_HEIGHT = 300;
+const MAX_NODE_HEIGHT = 200;
 const allResults = [...results1, ...results2, ...results3, ...results4, ...results5, ...results6];
 // const allResults = [...results1];
 

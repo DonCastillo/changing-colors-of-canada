@@ -7,10 +7,19 @@
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	width: 100px;
+	width: 70px;
 	flex-wrap: no-wrap;
 	align-items: center;
+	font-size:0.8rem;
 	justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.prov {
+		font-size:0.5rem;
+		width: 50px;
+	}
+
 }
 
 #BC {
@@ -45,12 +54,12 @@
 
 #NS {
 	top: 80%;
-	right: 4%;
+	right: 2%;
 }
 
 #PE {
 	top: 67%;
-	right: 11%;
+	right: 10%;
 }
 #NL {
 	top: 38%;
